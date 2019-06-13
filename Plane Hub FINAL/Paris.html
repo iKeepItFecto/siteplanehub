@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paris</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Style/w3.css">
+	<div align="center"><img src="Style/pla.png" style="width: 150px"></div>
+</head>
+
+<body class="w3-black">
+<div class="w3-bar w3-black">
+  
+  <div class="w3-row w3-orange" style="font-size: 16px">
+    <a href="Home.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Home</button>
+    </a>
+    <a href="Pacotes.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Pacotes</button>
+    </a>
+    <a href="Contato.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Contato</button>
+    </a>
+  </div>  
+
+</div>
+</br></br>
+
+ <div class="w3-card-4">
+
+<header class="w3-container w3-deep-orange">
+  <h1>Paris</h1>
+</header>
+
+<div class="w3-container">
+<div align="center">  
+<img class="mySlides" src="Style/frança/luz.jpg" width="400">
+<img class="mySlides" src="Style/frança/torre.jpg" width="400">
+<img class="mySlides" src="Style/frança/arco.jpg" width="400">
+</div>
+<div class="w3-center">
+  <button class="w3-button" onclick="plusDivs(-1)">&#10094; Prev</button>
+  <button class="w3-button" onclick="plusDivs(1)">Next &#10095;</button>
+
+</div>
+<script>var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}</script>
+  <p><b>Além de ser capital da luz, contém uma das mais esplendorosas obras da humanidade - A torre eiffel. Sem contar com os diversos museus e uma culinária deliciosa.</b></br>
+<b>Duração:</b> Cinco dias e Quatro noites</br>
+<b>Hotel:</b> Mercure</br>
+<b>Translado: </b>Não incluso. 
+</p>
+</div>
+
+<footer class="w3-container w3-deep-orange">
+  <a href="Compra.html">
+    <button class="w3-button w3-deep-orange w3-hover-orange w3-right w3-down">Comprar</button>
+    </a>
+  <h5><b>Preço:</b> 7.732 R$ ou 0.25 BTC</h5>
+</footer>
+
+</div>
+
+</body>
+</html>

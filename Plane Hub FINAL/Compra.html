@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compra</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Style/w3.css">
+<div align="center"><img src="Style/pla.png" style="width: 150px"></div>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<body class="w3-black">
+<div class="w3-bar w3-black">
+  
+  <div class="w3-row w3-orange" style="font-size: 16px">
+    <a href="Home.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Home</button>
+    </a>
+    <a href="Pacotes.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Pacotes</button>
+    </a>
+    <a href="Contato.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Contato</button>
+    </a>
+  </div>  
+
+</div>
+
+</br></br>
+
+<div class="w3-panel w3-deep-orange">
+  <h3><b>Efetue sua compra</b></h3>
+  <p>Insira suas credenciais e selecione o método de pagamento desejado.</p>
+</div>
+
+
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openCity('cartao')">Cartão de crédito</button>
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openCity('bitcoin')">Bitcoin</button>
+
+</div>
+
+<br><br>
+
+<table text-align: left id="cartao" class="w3-container city">
+  <tr>
+  <th>Nome <font color="red">*</font>
+    <br>
+  <input type="text" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Sobrenome <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+  <th>Data de nascimento <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="dd/mm/aaaa" name="Nome" size="18"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Telefone <font color="red"> </font>
+      <br>
+  <input type="text" placeholder="ex.: (28)99995-8977" name="Nome" size="39"/> </th> 
+</tr>
+<tr>
+  <th>Cidade <font color="red">*</font>
+    <br>
+  <input type="text" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Estado <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th>Endereço <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: Rua Vicente Sousa" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Número <font color="red">*</font>
+      <br>
+  <input type="text" placeholder="Ex.: 16" name="Nome" size="5"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+<th>CEP <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: 29360-000" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> CPF <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+ <th> Selecione o cartão <font color="red">*</font>
+
+<select>
+  <option value="volvo">Visa</option>
+  <option value="saab">Mastercard</option>
+  <option value="opel">Elo</option>
+  <option value="audi">Bradesco</option>
+  <option value="audi">Caixa</option>
+  <option value="audi">HSBC</option>
+  <option value="audi">Itaú</option>
+</select>
+</th>
+<tr>
+  <th>Número do cartão <font color="red">*</font>
+    <br>
+  <input type="text" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> CVV <font color="red">*</font>
+      <br>
+  <input type="text" placeholder="Ex.: 666" name="Nome" size="5"/> </th> 
+</tr>
+<tr>
+  <th>Válido até <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: mm/aa" name="Nome" size="30"/> </th> 
+</tr>
+<tr>
+  <th>
+<a href="Sucesso.html"><button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-orange w3-hover-deep-orange w3-ripple w3-round-large">Comprar</button></a>
+    <br>
+
+
+
+</table>
+
+
+
+<table id="bitcoin" class="w3-container city" style="display:none">
+  <tr>
+  <th>Nome <font color="red">*</font>
+    <br>
+  <input type="text" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Sobrenome <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+  <th>Data de nascimento <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="dd/mm/aaaa" name="Nome" size="18"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Telefone <font color="red"> </font>
+      <br>
+  <input type="text" placeholder="ex.: (28)99995-8977" name="Nome" size="39"/> </th> 
+</tr>
+<tr>
+  <th>Cidade <font color="red">*</font>
+    <br>
+  <input type="text" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Estado <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th>Endereço <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: Rua Vicente Sousa" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Número <font color="red">*</font>
+      <br>
+  <input type="text" placeholder="Ex.:16" name="Nome" size="5"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+<th>CEP <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: 29360-000" name="Nome" size="30"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> CPF <font color="red">*</font>
+      <br>
+  <input type="text" name="Nome" size="39"/> </th> 
+</tr>
+  <tr>
+    <tr>
+  <th> <font color="red"> </font>
+</tr>
+<tr>
+  <th> <font color="red"> </font>
+</tr>
+<th> Carteira Bitcoin <font color="red">*</font>
+
+<select>
+  <option value="volvo">Coinbase</option>
+  <option value="saab">Jaxx Wallet</option>
+  <option value="opel">Mycelium</option>
+  <option value="audi">Blockchain</option>
+  <option value="audi">Trezzor Wallet</option>
+  <option value="audi">Electrum</option>
+  <option value="audi">Exodus</option>
+</select>
+</th>
+<tr>
+  <th>Endereço da sua carteira <font color="red">*</font>
+    <br>
+  <input type="text" placeholder="Ex.: 1CipkMbyVeLxXVUFFXNXWzB96JipZ1Hpoh" name="Nome" size="40"/> </th> 
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+<th>  <font color="red"> </font>
+    <th> Valor a ser transferido <font color="red">*</font>
+      <br>
+  <input type="text" placeholder="Ex.: 0.00548322" name="Nome" size="39"/> </th> 
+  <th> <p><a href="https://dolarhoje.com/bitcoin-hoje/">Cotação do Bitcoin</a></p>
+</tr>
+<tr>
+  <th><a href="Sucesso.html"><button>Transferir</button></a></th>
+</tr>
+
+  
+</table>
+
+
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
