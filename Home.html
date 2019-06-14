@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Style/w3.css">
+	<div align="center"><img src="Style/pla.png" style="width: 150px"></div>
+</head>
+
+<body class="w3-black">
+<div class="w3-bar w3-black">
+  
+  <div class="w3-row w3-orange" style="font-size: 16px">
+    <a href="Home.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Home</button>
+    </a>
+    <a href="Pacotes.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Pacotes</button>
+    </a>
+    <a href="Contato.html">
+    <button class="w3-col s4 l4 m4 w3-bar-item w3-button w3-hover-deep-orange w3-ripple">Contato</button>
+    </a>
+  </div>  
+
+</div>
+
+</br>
+
+<div>
+    
+</div>
+
+<div class="w3-content w3-section" style="max-width:600px">
+  <img class="Slides" src="Style/home/praia.jpeg" style="width:100%">
+  <img class="Slides" src="Style/home/pulo.jpeg" style="width:100%">
+  <img class="Slides" src="Style/home/show.jpg" style="width:100%">
+  <img class="Slides" src="Style/home/balao.jpg" style="width:100%">
+</div>
+
+<script>
+var index = 0;
+carosel();
+
+function carosel() {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  index++;
+  if (index > x.length) {index = 1}    
+  x[index-1].style.display = "block";  
+  setTimeout(carosel, 2000);
+}
+</script>
+
+</body>
+</html>
